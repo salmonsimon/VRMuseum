@@ -60,6 +60,8 @@ Build/*/**
 # Don't ignore icon files in Build
 !Build/**/*.ico
 
+# Don't ignore stuff needed for the MetaXR Plugin
+
 # Built data for maps
 *_BuiltData.uasset
 
@@ -72,3 +74,13 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Allow specific prebuilt binaries for Oculus Interaction
+!Plugins/
+!Plugins/MetaXRInteraction/
+!Plugins/MetaXRInteraction/Binaries/
+!Plugins/MetaXRInteraction/Binaries/ThirdParty/
+!Plugins/MetaXRInteraction/Binaries/ThirdParty/OculusInteractionLibrary/
+!Plugins/MetaXRInteraction/Binaries/ThirdParty/OculusInteractionLibrary/Win64/
+!Plugins/MetaXRInteraction/Binaries/ThirdParty/OculusInteractionLibrary/Win64/InteractionSDK.dll
+!Plugins/MetaXRInteraction/Binaries/ThirdParty/OculusInteractionLibrary/Win64/InteractionSDK.dll.imp.lib
